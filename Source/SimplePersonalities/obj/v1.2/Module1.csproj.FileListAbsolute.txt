@@ -1,0 +1,5 @@
+E:\Steam Games\steamapps\common\RimWorld\Mods\Simple Personalities\v1.2\Assemblies\SP_Module1.dll
+E:\Steam Games\steamapps\common\RimWorld\Mods\Simple Personalities\Source\SimplePersonalities\obj\v1.2\Module1.csprojAssemblyReference.cache
+E:\Steam Games\steamapps\common\RimWorld\Mods\Simple Personalities\Source\SimplePersonalities\obj\v1.2\Module1.csproj.CoreCompileInputs.cache
+E:\Steam Games\steamapps\common\RimWorld\Mods\Simple Personalities\Source\SimplePersonalities\obj\v1.2\SP_Module1.dll
+E:\Steam Games\steamapps\common\RimWorld\Mods\Simple Personalities\1.2\Assemblies\SP_Module1.dll

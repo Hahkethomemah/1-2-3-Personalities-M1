@@ -1,0 +1,46 @@
+<Defs>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Rational</defName>
+    <label>rational</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Idealistic</defName>
+    <label>idealistic</label>
+    <incompatibleVariants>
+      <li>SP_Idealist</li>
+    </incompatibleVariants>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Principled</defName>
+    <label>principled</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Purposeful</defName>
+    <label>purposeful</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Self-Controlled</defName>
+    <label>self-controlled</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Calm</defName>
+    <label>calm</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Judgmental</defName>
+    <label>judgmental</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Obsessive</defName>
+    <label>obsessive</label>
+  </SPM1.PersonalityTrait>
+
+</Defs>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+ 
+ <SP.LoadingLabel>Simple Personalities - Module 1</SP.LoadingLabel>
+ <SP.PersonalityHeader>{0}'s Personality</SP.PersonalityHeader>
+
+ <SP.HiddenPrisonerPersonality>Hidden: This person's personality is not yet known.\nReduce their resistance to reveal their personality.</SP.HiddenPrisonerPersonality>
+ <SP.HiddenPersonality>Hidden: This person's personality is unknown, since they are not a member of your colony.</SP.HiddenPersonality>
+
+ <SP.HiddenAnimalPersonality>This animal's personality is not yet known.\nTame the animal to discover its nature.</SP.HiddenAnimalPersonality>
+ <SP.HiddenAnimalOfFactionPersonality>This animal's personality is not yet known.\nTrain the animal or wait a few days to discover its personality.</SP.HiddenAnimalOfFactionPersonality>
+
+<SP.AnimalReveal.Training>{0} spent enough time with {1} to understand its nature.</SP.AnimalReveal.Training>
+<SP.AnimalReveal.Time>{0} felt unsure for the last few days, but has finally accepted {1} as its home. Its personality has been revealed.</SP.AnimalReveal.Time>
+
+<SP.EditingFor>Editing personality: {0}</SP.EditingFor>
+<SP.Change>Change</SP.Change>
+<SP.MissingPart>None</SP.MissingPart>
+<SP.RootLabel>Personality root: {0}</SP.RootLabel>
+<SP.VariantLabel>Personality variant: {0}</SP.VariantLabel>
+<SP.MainTraitLabel>Main trait: {0}</SP.MainTraitLabel>
+<SP.SecondaryTraitLabel>Secondary trait: {0}</SP.SecondaryTraitLabel>
+<SP.OptionalTraitLabel>Optional trait: {0}</SP.OptionalTraitLabel>
+<SP.InvalidWarning>Invalid personality! Please create a valid personality, or you will cause serious errors!\nHumans need a root, variant, and the main and secondary trait.\nAnimals need root and variant.</SP.InvalidWarning>
+<SP.RollNewDescription>Roll new description</SP.RollNewDescription>
+<SP.TweakDescription>Tweak description</SP.TweakDescription>
+<SP.ApplyToCharacter>Apply new description</SP.ApplyToCharacter>
+<SP.Seeds>Seeds:</SP.Seeds>
+<SP.AddSeed>Add new</SP.AddSeed>
+<SP.RemoveSeed>Remove last</SP.RemoveSeed>
+<SP.EditPersonality>Edit personality</SP.EditPersonality>
+<SP.EditPersonalities>Edit Personalities</SP.EditPersonalities>
+<SP.Personalities>Personalities</SP.Personalities>
+<SP.PrepareCarefullyPatchLabel>Patching prepare carefully...</SP.PrepareCarefullyPatchLabel>
+<SP.CharacterEditorPatchLabel>Patching character editor...</SP.CharacterEditorPatchLabel>
+<SP.DoesNotHavePersonality>This pawn does not have a personality.</SP.DoesNotHavePersonality>
+<SP.SeedExplaination>Each seed changes a particular part of the description.\nDepending on the description type and length, some seed values may do nothing.</SP.SeedExplaination>
+
+<!-- Settings menu (SPS stands for Simple Personalities Settings) -->
+<SPS.Header>Hover over an item to see a description.\nRight click to reset to default value.\nNote: Some settings require a restart to take effect.</SPS.Header>
+<SPS.ShowAdvanced>Show advanced options?</SPS.ShowAdvanced>
+<SPS.ShowAdvancedDesc>Show or hides advanced mod settings.\nAdvanced settings should only be adjusted if you know what you are doing.</SPS.ShowAdvancedDesc>
+<SPS.ResetAll>Reset All</SPS.ResetAll>
+<SPS.Default>Default: {0}</SPS.Default>
+<SPS.Yes>Yes</SPS.Yes>
+<SPS.No>No</SPS.No>
+
+<SPS.VisualCat>Visual</SPS.VisualCat>
+<SPS.UseSingleColor>Monochrome description labels:If enabled, replaces the multi-colored personality description labels with a single color, which can be easier to read.\nRequieres reloading the save to take full effect.</SPS.UseSingleColor>
+
+<SPS.AnimalCat>Animals</SPS.AnimalCat>
+<SPS.AnimalTicksToReveal>Ticks to animal reveal:The time, in ticks, after which a tame animal will automatically reveal its personality.\nThere are 60 ticks in a second.</SPS.AnimalTicksToReveal>
+<SPS.AnimalPersonalityOnTrainChance>Personality reveal on train chance:The percentage chance for a tame animal's personality to be revealed upon a training attempt.</SPS.AnimalPersonalityOnTrainChance>
+<SPS.ExtraBioHeight>Extra bio height:The additional height that is added to a character's bio window, to accomodate the personality description. Decrease if the window goes off the top of the screen.</SPS.ExtraBioHeight>
+<SPS.FreezeDescriptions>Freeze descriptions:Rather than using a random seed system, the character's personality description is saved with the map, ensuring description consistency at the cost of save file size and load time.\nAfter this is enabled, changing the Monochrome descriptions option will not have any effect.</SPS.FreezeDescriptions>
+
+<SPS.DoAnimalHediffs>Enable animal buffs:Enables or disables animal hediffs (bonuses).</SPS.DoAnimalHediffs>
+
+</LanguageData>

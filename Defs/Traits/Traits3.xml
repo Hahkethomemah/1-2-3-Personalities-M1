@@ -1,0 +1,43 @@
+<Defs>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Success-Oriented</defName>
+    <label>success-oriented</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Pragmatic</defName>
+    <label>pragmatic</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Adaptive</defName>
+    <label>adaptive</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Excelling</defName>
+    <label>excelling</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Driven</defName>
+    <label>driven</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Self-Conscious</defName>
+    <label>self-conscious</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Ambitious</defName>
+    <label>ambitious</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Charming</defName>
+    <label>charming</label>
+  </SPM1.PersonalityTrait>
+
+</Defs>

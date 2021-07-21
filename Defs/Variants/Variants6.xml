@@ -1,0 +1,23 @@
+<Defs>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Loyalist</defName>
+    <label>Loyalist</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Guardian</defName>
+    <label>Guardian</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Confidant</defName>
+    <label>Confidant</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Iconoclast</defName>
+    <label>Iconoclast</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

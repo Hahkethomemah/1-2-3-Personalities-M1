@@ -1,0 +1,103 @@
+
+<Defs>
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_WalkiesAddict</defName>
+    <label>walkies addict</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Runner</defName>
+    <label>runner</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Howler</defName>
+    <label>midnight howler</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_ShowOff</defName>
+    <label>show-off</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_ClubMember</defName>
+    <label>"Forgot to bury my poop" club member</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_MessyGobbler</defName>
+    <label>messy gobbler</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Escapist</defName>
+    <label>escapist</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Sprinter</defName>
+    <label>sprinter</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_LegHumper</defName>
+    <label>leg humper</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Ambusher</defName>
+    <label>ambusher</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Smudge</defName>
+    <label>smudge</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_ZoomiesFanatic</defName>
+    <label>zoomies fanatic</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Mudmobile</defName>
+    <label>mudmobile</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Quicksilver</defName>
+    <label>quicksilver</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Flash</defName>
+    <label>flash</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Fleabag</defName>
+    <label>fleabag</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_UnLeashable</defName>
+    <label>un-leashable</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_WaggingMachine</defName>
+    <label>wagging machine</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_FartHopper</defName>
+    <label>fart-hopper</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_EscapeArtist</defName>
+    <label>escape artist</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

@@ -1,0 +1,112 @@
+
+<Defs>
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_GoodBoy</defName>
+    <label>good {0}</label> <!-- The {0} is replaced using the genderReplace list -->
+    <genderReplace>
+      <li>boy/girl</li> <!-- The first item is male (or genderless), second is female -->
+    </genderReplace>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Hugger</defName>
+    <label>hugger</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_PackLeader</defName>
+    <label>pack leader</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_BestFriend</defName>
+    <label>man's best friend</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Snuggler</defName>
+    <label>snuggler</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Floof</defName>
+    <label>floof</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_PoopProducer</defName>
+    <label>poop producer</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Yelper</defName>
+    <label>yelper</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Alpha</defName>
+    <label>alpha {0}</label>
+    <genderReplace>
+      <li>male/female</li>
+    </genderReplace>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_ToyHoarder</defName>
+    <label>toy hoarder</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_DirtCarrier</defName>
+    <label>joyful dirt carrier</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_ExhibitionVeteran</defName>
+    <label>exhibiton veteran</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Fondling</defName>
+    <label>fondling</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_GoodestBoy</defName>
+    <label>goodest {0}</label>
+    <genderReplace>
+      <li>boy/girl</li>
+    </genderReplace>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Runt</defName>
+    <label>runt</label>
+  </SPM1.PersonalityVariant>
+
+   <SPM1.PersonalityVariant>
+    <defName>SP_Animal_CutiePie</defName>
+    <label>cutie pie</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_CutenessOverload</defName>
+    <label>cuteness overload</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_SlipperBringer</defName>
+    <label>slipper bringer</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_LoyalOne</defName>
+    <label>loyal one</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_FaceLicker</defName>
+    <label>face licker</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

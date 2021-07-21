@@ -1,0 +1,23 @@
+<Defs>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Investigator</defName>
+    <label>Investigator</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Philosopher</defName>
+    <label>Philosopher</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Troubleshooter</defName>
+    <label>Troubleshooter</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Thinker</defName>
+    <label>Thinker</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

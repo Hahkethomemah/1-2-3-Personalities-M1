@@ -1,0 +1,43 @@
+<Defs>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Caring</defName>
+    <label>caring</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Altruistic</defName>
+    <label>altruistic</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Ostentatious</defName>
+    <label>ostentatious</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_People-pleasing</defName>
+    <label>people-pleasing</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Possessive</defName>
+    <label>possessive</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Exuberant</defName>
+    <label>exuberant</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Empathetic</defName>
+    <label>empathetic</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Cordial</defName>
+    <label>cordial</label>
+  </SPM1.PersonalityTrait>
+
+</Defs>

@@ -1,0 +1,43 @@
+<Defs>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Fun-loving</defName>
+    <label>fun-loving</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Spontaneous</defName>
+    <label>spontaneous</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Versatile</defName>
+    <label>versatile</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Distractible</defName>
+    <label>distractible</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Scattered</defName>
+    <label>scattered</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Diligent</defName>
+    <label>diligent</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Erratic</defName>
+    <label>erratic</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Childlike</defName>
+    <label>childlike</label>
+  </SPM1.PersonalityTrait>
+
+</Defs>

@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj": {}
+  },
+  "projects": {
+    "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj",
+        "projectName": "SP_Module1",
+        "projectPath": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj",
+        "packagesPath": "C:\\Users\\The Superior One\\.nuget\\packages\\",
+        "outputPath": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\The Superior One\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Krafs.Rimworld.Ref": {
+              "target": "Package",
+              "version": "[1.2.2905, )"
+            },
+            "Lib.Harmony": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[2.0.4, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.410\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

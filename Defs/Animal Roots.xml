@@ -1,0 +1,142 @@
+
+<Defs>
+  
+  <SPM1.PersonalityRoot>
+    <defName>SP_AnimalRoot_Kind</defName>
+    <type>Animal</type>
+    <label>kind</label>
+    <color>#6de07c</color>
+
+    <variants>
+      <li>SP_Animal_GoodBoy</li>
+      <li>SP_Animal_Hugger</li>
+      <li>SP_Animal_PackLeader</li>
+      <li>SP_Animal_BestFriend</li>
+      <li>SP_Animal_Snuggler</li>
+      <li>SP_Animal_Floof</li>
+      <li>SP_Animal_PoopProducer</li>
+      <li>SP_Animal_Yelper</li>
+      <li>SP_Animal_Alpha</li>
+      <li>SP_Animal_ToyHoarder</li>
+      <li>SP_Animal_DirtCarrier</li>
+      <li>SP_Animal_ExhibitionVeteran</li>
+      <li>SP_Animal_Fondling</li>
+      <li>SP_Animal_GoodestBoy</li>
+      <li>SP_Animal_Runt</li>
+      <li>SP_Animal_CutiePie</li>
+      <li>SP_Animal_CutenessOverload</li>
+      <li>SP_Animal_SlipperBringer</li>
+      <li>SP_Animal_LoyalOne</li>
+      <li>SP_Animal_FaceLicker</li>
+    </variants>
+
+    <hediffsIfKnown>
+      <li>SP_Hediff_AnimalKind</li>
+    </hediffsIfKnown>
+
+  </SPM1.PersonalityRoot>
+
+  <SPM1.PersonalityRoot>
+    <defName>SP_AnimalRoot_Intense</defName>
+    <type>Animal</type>
+    <label>intense</label>
+    <color>#fb9c9e</color>
+
+    <variants>
+      <li>SP_Animal_BadBoy</li>
+      <li>SP_Animal_Mischief</li>
+      <li>SP_Animal_FussyEater</li>
+      <li>SP_Animal_Bully</li>
+      <li>SP_Animal_HouseplantEater</li>
+      <li>SP_Animal_ShoeGnawer</li>
+      <li>SP_Animal_TerritorialWarlord</li>
+      <li>SP_Animal_BarkingEnthusiast</li>
+      <li>SP_Animal_FeetBiter</li>
+      <li>SP_Animal_NeighbourChaser</li>
+      <li>SP_Animal_GreedyFetcher</li>
+      <li>SP_Animal_PerpetualSnarler</li>
+      <li>SP_Animal_FancyPurebred</li>
+      <li>SP_Animal_MoodyDiva</li>
+      <li>SP_Animal_Rascal</li>
+      <li>SP_Animal_Stalker</li>
+      <li>SP_Animal_SpoiledPup</li>
+      <li>SP_Animal_MailmansNightmare</li>
+    </variants>
+
+    <hediffsIfKnown>
+      <li>SP_Hediff_AnimalIntense</li>
+    </hediffsIfKnown>
+
+  </SPM1.PersonalityRoot>
+
+  <SPM1.PersonalityRoot>
+    <defName>SP_AnimalRoot_Energetic</defName>
+    <type>Animal</type>
+    <label>energetic</label>
+    <color>#e5ff86</color>
+
+    <variants>
+      <li>SP_Animal_Runner</li>
+      <li>SP_Animal_Howler</li>
+      <li>SP_Animal_WalkiesAddict</li>
+      <li>SP_Animal_ShowOff</li>
+      <li>SP_Animal_ClubMember</li>
+      <li>SP_Animal_MessyGobbler</li>
+      <li>SP_Animal_Escapist</li>
+      <li>SP_Animal_Sprinter</li>
+      <li>SP_Animal_LegHumper</li>
+      <li>SP_Animal_Ambusher</li>
+      <li>SP_Animal_Smudge</li>
+      <li>SP_Animal_ZoomiesFanatic</li>
+      <li>SP_Animal_Mudmobile</li>
+      <li>SP_Animal_Quicksilver</li>
+      <li>SP_Animal_Flash</li>
+      <li>SP_Animal_Fleabag</li>
+      <li>SP_Animal_UnLeashable</li>
+      <li>SP_Animal_WaggingMachine</li>
+      <li>SP_Animal_FartHopper</li>
+      <li>SP_Animal_EscapeArtist</li>
+    </variants>
+
+    <hediffsIfKnown>
+      <li>SP_Hediff_AnimalEnergetic</li>
+    </hediffsIfKnown>
+
+  </SPM1.PersonalityRoot>
+
+  <SPM1.PersonalityRoot>
+    <defName>SP_AnimalRoot_Calm</defName>
+    <type>Animal</type>
+    <label>calm</label>
+    <color>#797dff</color>
+
+    <variants>
+      <li>SP_Animal_Chonk</li>
+      <li>SP_Animal_ResidentSleeper</li>
+      <li>SP_Animal_FeetBump</li>
+      <li>SP_Animal_LapRegular</li>
+      <li>SP_Animal_StaringContestChampion</li>
+      <li>SP_Animal_HorriblySlowStalker</li>
+      <li>SP_Animal_Sunbather</li>
+      <li>SP_Animal_BedDweller</li>
+      <li>SP_Animal_BlepSpecialist</li>
+      <li>SP_Animal_Loner</li>
+      <li>SP_Animal_Sleepyhead</li>
+      <li>SP_Animal_Laggard</li>
+      <li>SP_Animal_Slowpoke</li>
+      <li>SP_Animal_DillyDallyer</li>
+      <li>SP_Animal_Landmark</li>
+      <li>SP_Animal_CEO</li>
+      <li>SP_Animal_Maruder</li>
+      <li>SP_Animal_Catnip</li>
+      <li>SP_Animal_BOB</li>
+      <li>SP_Animal_GentleGiant</li>
+    </variants>
+
+    <hediffsIfKnown>
+      <li>SP_Hediff_AnimalCalm</li>
+    </hediffsIfKnown>
+
+  </SPM1.PersonalityRoot>
+
+</Defs>

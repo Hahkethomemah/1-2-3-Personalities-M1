@@ -1,0 +1,23 @@
+<Defs>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Reformer</defName>
+    <label>Reformer</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Idealist</defName>
+    <label>Idealist</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Activist</defName>
+    <label>Activist</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Perfectionist</defName>
+    <label>Perfectionist</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

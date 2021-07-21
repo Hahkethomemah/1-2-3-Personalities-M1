@@ -1,0 +1,43 @@
+<Defs>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Dominating</defName>
+    <label>dominating</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Self-confident</defName>
+    <label>self-confident</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Decisive</defName>
+    <label>decisive</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Willful</defName>
+    <label>willful</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Confrontational</defName>
+    <label>confrontational</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Persistent</defName>
+    <label>persistent</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Competitive</defName>
+    <label>competitive</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Assertive</defName>
+    <label>assertive</label>
+  </SPM1.PersonalityTrait>
+
+</Defs>

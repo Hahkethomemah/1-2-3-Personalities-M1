@@ -1,0 +1,44 @@
+
+<Defs>
+  
+  <!-- The description stack used for all human-likes -->
+  <SPM1.DescStack>
+    <defName>SP_AnimalStack</defName>
+    <branches>
+
+      <!-- Default branch - just generates a normal description -->
+      <li>
+        <leaves>
+
+          <!-- Add the 'main' description text, using the root and variant. -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_AnimalPersonalityDesc</rulePack>
+            <root>main</root>
+            <uses>
+              <Root>ROOT</Root>
+              <Variant>VAR</Variant>
+            </uses>
+          </li>
+
+          <!-- Add a space -->
+          <li>
+            <type>Space</type>
+          </li>
+
+          <!-- Add the 'secondary' description text, using the variant. -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_AnimalPersonalityDesc</rulePack>
+            <root>secondary</root>
+            <uses>
+              <Variant>VAR</Variant>
+            </uses>
+          </li>
+
+        </leaves>
+      </li>
+
+    </branches>
+  </SPM1.DescStack>
+</Defs>

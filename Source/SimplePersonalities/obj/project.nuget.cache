@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "U/kiyCfAiYoN6QteADYyp2gOvZqCW0wAsPdeStYbiOzvprxcY+630pWrtuhaekRSWT+elI07tgZPs/kcGRwWoQ==",
+  "success": true,
+  "projectFilePath": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\The Superior One\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2905\\krafs.rimworld.ref.1.2.2905.nupkg.sha512",
+    "C:\\Users\\The Superior One\\.nuget\\packages\\lib.harmony\\2.0.4\\lib.harmony.2.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

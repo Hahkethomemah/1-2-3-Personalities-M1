@@ -1,0 +1,23 @@
+<Defs>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Achiever</defName>
+    <label>Achiever</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Charmer</defName>
+    <label>Charmer</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Professional</defName>
+    <label>Professional</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Performer</defName>
+    <label>Performer</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

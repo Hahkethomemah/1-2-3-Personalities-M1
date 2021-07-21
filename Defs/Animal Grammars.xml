@@ -1,0 +1,17 @@
+
+<Defs>
+
+  <RulePackDef>
+    <defName>SP_AnimalPersonalityDesc</defName>
+    <rulePack>
+      <rulesStrings>
+
+        <li>main->[PAWN_nameDef] is an animal of [ROOT_labelCol] nature.</li>
+        
+        <li>secondary->[PAWN_pronoun] is known to be the [VAR_labelCol].</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

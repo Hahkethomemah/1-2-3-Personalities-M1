@@ -1,0 +1,43 @@
+<Defs>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Intense</defName>
+    <label>intense</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Perceptive</defName>
+    <label>perceptive</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Innovative</defName>
+    <label>innovative</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Secretive</defName>
+    <label>secretive</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Isolated</defName>
+    <label>isolated</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Uptight</defName>
+    <label>uptight</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Nostalgic</defName>
+    <label>nostalgic</label>
+  </SPM1.PersonalityTrait>
+
+  <SPM1.PersonalityTrait>
+    <defName>SP_Independent</defName>
+    <label>independent</label>
+  </SPM1.PersonalityTrait>
+
+</Defs>

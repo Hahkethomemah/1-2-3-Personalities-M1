@@ -1,0 +1,23 @@
+<Defs>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Enthusiast</defName>
+    <label>Enthusiast</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Pathfinder</defName>
+    <label>Pathfinder</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Opportunist</defName>
+    <label>Opportunist</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Adventurer</defName>
+    <label>Adventurer</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

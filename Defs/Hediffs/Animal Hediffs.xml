@@ -1,0 +1,81 @@
+<Defs>
+
+  <!-- Don't touch this def unless you know what you are doing -->
+  <HediffDef Name="SP_AnimalHediffBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <makesAlert>false</makesAlert>
+    <chronic>true</chronic>
+    <everCurableByItem>false</everCurableByItem>
+    <isBad>false</isBad>
+    <tags>
+      <li>SP_AddedByPersonality</li>
+    </tags>
+  </HediffDef>
+
+  <!-- Kind animals get this hediff. -->
+  <HediffDef ParentName="SP_AnimalHediffBase">
+    <defName>SP_Hediff_AnimalKind</defName>
+    <label>Personality (Kind)</label>
+    <description>This animal has a kind personality. It will nuzzle colonists more often.</description>
+    <defaultLabelColor>(109, 224, 124)</defaultLabelColor> <!-- Format is (Red, Green, Blue) where each value is in the range 0-255 -->
+    <comps>
+      <li Class="SPM1.Comps.CompProperties_NuzzleFactor">
+        <intervalFactor>0.8</intervalFactor>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- Intense animals get this hediff. -->
+  <HediffDef ParentName="SP_AnimalHediffBase">
+    <defName>SP_Hediff_AnimalIntense</defName>
+    <label>Personality (Intense)</label>
+    <description>This animal has an intense personality. It will deal more damage when it attacks.</description>
+    <defaultLabelColor>(251, 156, 158)</defaultLabelColor>
+    <comps>
+      <li Class="SPM1.Comps.CompProperties_DamageFactor">
+        <factor>1.1</factor>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- Energetic animals get this hediff. -->
+  <HediffDef ParentName="SP_AnimalHediffBase">
+    <defName>SP_Hediff_AnimalEnergetic</defName>
+    <label>Personality (Energetic)</label>
+    <description>This animal has an energetic personality. It will move slightly faster.</description>
+    <defaultLabelColor>(229, 255, 134)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>0.2</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Calm animals get this hediff. -->
+  <HediffDef ParentName="SP_AnimalHediffBase">
+    <defName>SP_Hediff_AnimalCalm</defName>
+    <label>Personality (Calm)</label>
+    <description>This animal has a calm personality. Its steady movement allows it to haul more items and carry more mass in caravans.</description>
+    <defaultLabelColor>(121, 125, 255)</defaultLabelColor>
+
+    <!-- This is the vanilla way of changing stats. This changes the carry capacity - that is how many items the pawn can pick up at once -->
+    <stages>
+      <li>
+        <statFactors>
+          <CarryingCapacity>1.2</CarryingCapacity>
+        </statFactors>
+      </li>
+    </stages>
+
+    <!-- However there is no vanilla stat for 'caravan capacity' so we use a custom comp to change this -->
+    <comps>
+      <li Class="SPM1.Comps.CompProperties_CapacityFactor">
+        <factor>1.2</factor>
+      </li>
+    </comps>
+
+  </HediffDef>
+
+</Defs>

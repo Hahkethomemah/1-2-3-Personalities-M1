@@ -1,0 +1,110 @@
+
+<Defs>
+  
+  <!-- The description stack used for all human-likes -->
+  <SPM1.DescStack>
+    <defName>SP_HumanStack</defName>
+    <branches>
+
+      <!-- Branch if the pawn has the Psychopath trait --> 
+      <li Class="SPM1.DescBranchIfHasTrait">
+        <traits>
+          <li>Psychopath</li>
+        </traits>
+        <leaves>
+
+          <!-- Add the psychopath main description -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_PersonalityDesc</rulePack>
+            <root>psychoMain</root>
+          </li>
+
+          <!-- Two line breaks (adds 1 blank line) -->
+          <li>
+            <type>NewLine</type>
+          </li>
+          <li>
+            <type>NewLine</type>
+          </li>
+
+          <!-- Add the psychopath secondary description -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_PersonalityDesc</rulePack>
+            <root>psychoSecondary</root>
+          </li>
+
+        </leaves>
+      </li>
+
+      <!-- Default branch - just generates a normal description -->
+      <li>
+        <leaves>
+
+          <!-- Add the 'main' description, using the variant, root and drive -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_PersonalityDesc</rulePack>
+            <root>main</root>
+            <uses>
+              <Variant>VAR</Variant>
+              <Root>ROOT</Root>
+              <Drive>DRIVE</Drive>
+            </uses>
+          </li>
+
+          <!-- Two line breaks (adds 1 blank line) -->
+          <li>
+            <type>NewLine</type>
+          </li>
+          <li>
+            <type>NewLine</type>
+          </li>
+
+          <!-- Main personality description -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_PersonalityDesc</rulePack>
+            <root>desc1</root>
+            <uses>
+              <MainTrait>TRAIT</MainTrait>
+            </uses>
+          </li>
+
+          <!-- Space -->
+          <li>
+            <type>Space</type>
+          </li>
+
+          <!-- Secondary personality description -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_PersonalityDesc</rulePack>
+            <root>desc2</root>
+            <uses>
+              <SecondaryTrait>TRAIT</SecondaryTrait>
+            </uses>
+          </li>
+
+          <!-- Another space -->
+          <li>
+            <type>Space</type>
+          </li>
+
+          <!-- Third (optional) personality description. If the third trait does not exist, this does nothing. -->
+          <li>
+            <type>Grammar</type>
+            <rulePack>SP_PersonalityDesc</rulePack>
+            <root>desc3</root>
+            <uses>
+              <OptionalTrait>TRAIT</OptionalTrait>
+            </uses>
+          </li>
+
+        </leaves>
+      </li>
+
+    </branches>
+  </SPM1.DescStack>
+</Defs>

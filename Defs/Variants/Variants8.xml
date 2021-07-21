@@ -1,0 +1,23 @@
+<Defs>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Challenger</defName>
+    <label>Challenger</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Protector</defName>
+    <label>Protector</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Nonconformist</defName>
+    <label>Nonconformist</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Diplomat</defName>
+    <label>Diplomat</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

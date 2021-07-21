@@ -1,0 +1,22 @@
+
+<Defs>
+
+  <SPM1.PersonalityDrive>
+    <defName>SP_Drive_Instincts</defName>
+    <label>instincts</label>
+    <color>#edd147</color>
+  </SPM1.PersonalityDrive>
+
+  <SPM1.PersonalityDrive>
+    <defName>SP_Drive_Feelings</defName>
+    <label>feelings</label>
+    <color>#bc79f7</color>
+  </SPM1.PersonalityDrive>
+
+  <SPM1.PersonalityDrive>
+    <defName>SP_Drive_Thinking</defName>
+    <label>thinking</label>
+    <color>#529c81</color> 
+  </SPM1.PersonalityDrive>
+
+</Defs>

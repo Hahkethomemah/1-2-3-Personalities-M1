@@ -1,0 +1,103 @@
+
+<Defs>
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Chonk</defName>
+    <label>chonk</label>
+  </SPM1.PersonalityVariant>
+
+   <SPM1.PersonalityVariant>
+    <defName>SP_Animal_ResidentSleeper</defName>
+    <label>resident sleeper</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_FeetBump</defName>
+    <label>feet bump</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_LapRegular</defName>
+    <label>lap regular</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_StaringContestChampion</defName>
+    <label>staring contest champion</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_HorriblySlowStalker</defName>
+    <label>horribly slow stalker</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Sunbather</defName>
+    <label>sunbather</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_BedDweller</defName>
+    <label>bed-dweller</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_BlepSpecialist</defName>
+    <label>blep specialist</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Loner</defName>
+    <label>loner</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Sleepyhead</defName>
+    <label>sleepyhead</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Laggard</defName>
+    <label>laggard</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Slowpoke</defName>
+    <label>slowpoke</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_DillyDallyer</defName>
+    <label>dilly-dallyer</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Landmark</defName>
+    <label>landmark</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_CEO</defName>
+    <label>CEO of chonks</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Maruder</defName>
+    <label>maruder</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_Catnip</defName>
+    <label>catnip aficionado</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_BOB</defName>
+    <label>beast of burden</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_GentleGiant</defName>
+    <label>gentle giant</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>

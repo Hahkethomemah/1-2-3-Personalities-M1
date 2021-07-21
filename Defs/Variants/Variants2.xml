@@ -1,0 +1,23 @@
+<Defs>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Helper</defName>
+    <label>Helper</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Companion</defName>
+    <label>Companion</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Host</defName>
+    <label>Host</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Caregiver</defName>
+    <label>Caregiver</label>
+  </SPM1.PersonalityVariant>
+
+</Defs>
