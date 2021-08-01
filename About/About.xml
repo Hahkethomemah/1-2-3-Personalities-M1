@@ -17,6 +17,9 @@ This mod is develped further thanks to the community support. Special thanks are
 - all anononymous funders
 - Patreon supporters, whose ongoing help helps to plan ahead
 - EpicGuru, for discounts, advice and general help
+
+Translation credits:
+- Korean (courtesy of inbae)
 </description>
   <modDependencies>
     <li>
@@ -30,7 +33,9 @@ This mod is develped further thanks to the community support. Special thanks are
     <li>brrainz.harmony</li>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld.royalty</li>
+    <li>ludeon.rimworld.ideology</li>
 	  <li>EdB.PrepareCarefully</li>
+    <li>EdB.PrepareCarefully.UnofficialPatch</li>
 	  <li>void.charactereditor</li>
   </loadAfter>
 </ModMetaData>

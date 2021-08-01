@@ -579,7 +579,7 @@
             <li>madness->put a piece of it inside [PAWN_objective]self</li>
             <li>madness->fell into the abyss</li>
         <li>psychoSecondary->[PAWN_pronoun]'s daydreaming about gutting other colonists.</li>
-        <li>psychoSecondary->[PAWN_pronoun] recurrently fades out and mutters under [PAWN_possessive] breath: [quoteweird]</li>
+        <li>psychoSecondary(p=2)->[PAWN_pronoun] recurrently fades out and mutters under [PAWN_possessive] breath: [quoteweird]</li>
         <li>psychoSecondary->[PAWN_pronoun] has an advanced antisocial personality disorder.</li>
         <li>psychoSecondary->[PAWN_pronoun] has an imaginary friend [ima_friend].</li>
             <li>ima_friend->with a knife and without a face</li>
@@ -616,7 +616,12 @@
         <li>psychoSecondary->[PAWN_pronoun] has no remorse when it comes to manipulating others.</li>
         <li>psychoSecondary->[PAWN_pronoun] volunteers every time the prisoners need to be taken care of.</li>
         <li>psychoSecondary->[PAWN_pronoun] is completely devoid of empathy.</li>
-            
+        
+        <!-- first August update -->
+        <li>quoteweird->“El Psy Kongroo.”</li>
+        <li>quoteweird->“Lorem ipsum dolor sit amet...”</li>
+        <li>quoteweird->“In gi rum imus noc te et con sumi.”</li>
+
       </rulesStrings>
     </rulePack>
   </RulePackDef>
