@@ -4,7 +4,7 @@
   <HediffDef Name="SP_AnimalHediffBase" Abstract="True">
     <hediffClass>HediffWithComps</hediffClass>
     <makesAlert>false</makesAlert>
-    <chronic>true</chronic>
+    <chronic>false</chronic>
     <everCurableByItem>false</everCurableByItem>
     <isBad>false</isBad>
     <tags>
