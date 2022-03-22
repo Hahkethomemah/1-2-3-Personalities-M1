@@ -16,6 +16,8 @@ namespace SPM1
 
         [TweakValue("Simple Personalities", 20, 200)]
         public static int ExtraBioHeight = 120;
+        [TweakValue("Simple Personalities", 0, 1)]
+        public static bool UseWorldviewTab = false;
 
         [TweakValue("Simple Personalities")]
         [SettingsAdvanced]
@@ -24,6 +26,8 @@ namespace SPM1
         [SettingsCategory("SPS.AnimalCat")]
         [TweakValue("Simple Personalities")]
         public static bool DoAnimalHediffs = true;
+        [TweakValue("Simple Personalities")]
+        public static bool ShowPersonalityRevealMessage = true;
 
         [TweakValue("Simple Personalities", 0f, 1f)]
         [SettingsPercentage]
@@ -48,7 +52,7 @@ namespace SPM1
                 var cat = field.GetCustomAttribute<SettingsCategoryAttribute>();
                 if (cat != null)
                 {
-                    list.Add(new SettingsCategory(cat.GetLabel().Translate()));
+                    list.Add(new SettingsCategory(cat.GetLabel()));
                 }
                 var tv = field.GetCustomAttribute<TweakValue>();
                 if (tv == null)
@@ -60,14 +64,7 @@ namespace SPM1
                 entry.IsPercentage = field.GetCustomAttribute<SettingsPercentageAttribute>() != null;
                 entry.IsAdvanced = field.GetCustomAttribute<SettingsAdvancedAttribute>() != null;
 
-                string txt = $"SPS.{field.Name}".Translate();
-                if (txt.IndexOf(':') < 0)
-                    continue;
-
-                string[] split = txt.Split(':');
-                entry.Label = $"<b>{split[0]}</b>";
-                entry.Description = split[1].Trim() + $"\n{"SPS.Default".Translate(entry.IsPercentage ? ((float)entry.DefaultValue * 100f).ToString("F0") + '%' : entry.DefaultValue.ToString())}";
-
+                entry.PreTranslation = $"SPS.{field.Name}";
                 list.Add(entry);
             }
 
@@ -140,6 +137,7 @@ namespace SPM1
 
         public readonly FieldInfo Field;
         public TweakValue TweakValue;
+        public string PreTranslation;
         public string Label;
         public string Description;
         public object DefaultValue;
@@ -212,6 +210,23 @@ namespace SPM1
             if (Field == null)
                 return;
 
+            if (Label == null)
+            {
+                string txt = PreTranslation.Translate();
+                if (txt.IndexOf(':') < 0)
+                {
+                    Core.Error($"No translation for 'SPS.{Field.Name}'!");
+                    Label = Field.Name;
+                    Description = "No description (missing translation)";
+                }
+                else
+                {
+                    string[] split = txt.Split(':');
+                    Label = $"<b>{split[0]}</b>";
+                    Description = split[1].Trim() + $"\n{"SPS.Default".Translate(IsPercentage ? ((float)DefaultValue * 100f).ToString("F0") + '%' : DefaultValue.ToString())}";
+                }
+            }
+
             var type = Field.FieldType;
             bool isChanged = !GetValue<object>().Equals(DefaultValue);
             Rect labelRect = default;
@@ -267,7 +282,7 @@ namespace SPM1
         public override void Draw(Listing_Standard listing)
         {
             listing.GapLine();
-            listing.Label($"<color=cyan>{Label}</color>");
+            listing.Label($"<color=cyan>{Label.Translate()}</color>");
         }
     }
 

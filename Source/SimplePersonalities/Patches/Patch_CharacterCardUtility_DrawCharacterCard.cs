@@ -10,6 +10,9 @@ namespace SPM1.Patches
     {
         static void Postfix(Rect rect, Pawn pawn)
         {
+            if (Settings.UseWorldviewTab)
+                return;
+
             var comp = pawn?.TryGetEnneagramComp();
             if (comp?.Enneagram == null || !comp.Enneagram.IsValid)
                 return;

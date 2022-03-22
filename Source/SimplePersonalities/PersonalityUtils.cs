@@ -1,7 +1,6 @@
-﻿using System;
+﻿using SPM1.Comps;
+using System;
 using System.Collections.Generic;
-using RimWorld;
-using SPM1.Comps;
 using Verse;
 
 namespace SPM1

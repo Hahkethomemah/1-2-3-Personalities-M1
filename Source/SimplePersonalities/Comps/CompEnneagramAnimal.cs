@@ -96,6 +96,10 @@ namespace SPM1.Comps
         {
             EnsureHediffs();
 
+            // Hide personality discovered message based on settings.
+            if (!Settings.ShowPersonalityRevealMessage)
+                return;
+
             switch (type)
             {
                 case DiscoveryType.FromTimer:

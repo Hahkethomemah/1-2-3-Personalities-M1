@@ -10,6 +10,9 @@ namespace SPM1.Patches
     {
         static void Postfix(ref Vector2 __result, Pawn pawn)
         {
+            if (Settings.UseWorldviewTab)
+                return;
+
             var enneagram = pawn?.TryGetEnneagram();
             if (enneagram == null || !enneagram.IsValid || PersonalityUtils.GetPersonalityVisibility(pawn) == PersonalityVisibility.Invisible)
                 return;
