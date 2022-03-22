@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using System;
+using UnityEngine;
 using Verse;
 
 namespace SPM1
@@ -48,6 +49,17 @@ namespace SPM1
         public void Load()
         {
             // Do any work here.
+            GetSettings<Settings>();
+        }
+
+        public override string SettingsCategory()
+        {
+            return Content.Name;
+        }
+
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            Settings.DrawUI(inRect);
         }
     }
 }

@@ -54,5 +54,37 @@ namespace SPM1
             }
             return null;
         }
+
+        public static string ExtractPersonality(this Pawn p)
+        {
+            var comp = p?.TryGetEnneagramComp();
+            if (comp == null)
+                return "<NULL>";
+
+            return comp.ExtractSaveString();
+        }
+
+        public static void IntractPersonality(this Pawn p, string data)
+        {
+            if (p == null || data == null)
+                return;
+
+            bool isNull = data == "<NULL>";
+            // This means that the original copied pawn did not have a personality comp...
+            // Therefore assume that this pawn will not either.
+            // If they do have a comp, they will retain whetever personality they already have, since there is nothing to overwrite
+            // with and we cannot just remove the comp (it will be added again dynamically on startup).
+            if (isNull)
+                return;
+
+            var comp = p.TryGetEnneagramComp();
+            if(comp == null)
+            {
+                Core.Warn($"Tried to intract (write from string) personality to pawn '{p.Name}', but that pawn does not have a comp.");
+                return;
+            }
+
+            comp.InsertSaveString(data);
+        }
     }
 }

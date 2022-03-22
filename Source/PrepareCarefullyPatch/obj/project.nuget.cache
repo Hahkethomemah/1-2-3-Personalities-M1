@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oxGpTtYC4SL4ZG40/PWIXLX9UBlwC/nwKCh3KMaccF8Y30i6SehXDSdY39HN7p1nq580vCd7UJkHOZG4bbQllQ==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\PrepareCarefullyPatch\\PrepareCarefullyPatch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\spain\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2905\\krafs.rimworld.ref.1.2.2905.nupkg.sha512",
+    "C:\\Users\\spain\\.nuget\\packages\\lib.harmony\\2.1.1\\lib.harmony.2.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

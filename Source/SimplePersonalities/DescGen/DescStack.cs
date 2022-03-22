@@ -8,7 +8,7 @@ namespace SPM1
     {
         public List<DescBranch> branches = new List<DescBranch>();
 
-        public string MakeString(Pawn pawn)
+        public string MakeString(Pawn pawn, DescriptionSeed seed)
         {
             var branch = ResolveBranch(pawn);
             if (branch == null)
@@ -17,7 +17,7 @@ namespace SPM1
                 return null;
             }
 
-            return branch.MakeString(pawn)?.Trim();
+            return branch.MakeString(pawn, seed)?.Trim();
         }
 
         public DescBranch ResolveBranch(Pawn pawn)

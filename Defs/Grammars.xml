@@ -28,7 +28,7 @@
             <li>near->near</li>
             <li>near->nigh</li>
             <li>near->almost</li>
-        <li>desc1->[PAWN_nameDef] holds well-deserved reputation of being [being_most] [TRAIT_labelCol] people in the colony.</li>
+        <li>desc1->[PAWN_nameDef] holds well-deserved reputation of being [being_most] [TRAIT_labelCol] person in the colony.</li>
             <li>being_most->one of the most</li>
             <li>being_most->the most</li>
             <li>being_most->simply the most</li>
@@ -416,8 +416,8 @@
             <li>hotgossip->not who [PAWN_pronoun] says [PAWN_pronoun] is</li>
             <li>hotgossip->in debt</li>
             <li>hotgossip->in possesion of a treasure map</li>
-            <li>hotgossip->a part of the secret police</li>
-            <li>hotgossip->a part of the masonic lodge</li>
+            <li>hotgossip->a member of the secret police</li>
+            <li>hotgossip->a member of the masonic lodge</li>
         <li>desc3->[wordonthestreet] [PAWN_nameDef] is [accusation].</li>
             <li>wordonthestreet->Some colonists claim that</li>
             <li>wordonthestreet->Word on the street is</li>
@@ -572,7 +572,6 @@
         <!-- psycho override here -->
         <li>psychoMain->[PAWN_nameDef] is a &lt;color=#de2316&gt;goddamn psycho&lt;/color&gt;.</li>
         <li>psychoSecondary->[PAWN_pronoun] [likes] to sneak around at night and watch people sleep.</li>
-        <li>psychoSecondary-></li>
         <li>psychoSecondary->[PAWN_pronoun]'s just a really creepy person.</li>
         <li>psychoSecondary->Nobody knows what to think of [PAWN_objective], [but] everyone agrees that they feel uneasy around them.</li>
         <li>psychoSecondary->[PAWN_pronoun] wandered to the edge of madness and [madness].</li>

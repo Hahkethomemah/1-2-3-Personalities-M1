@@ -15,12 +15,12 @@ namespace SPM1
             return true;
         }
 
-        public virtual string MakeString(Pawn pawn)
+        public virtual string MakeString(Pawn pawn, DescriptionSeed seed)
         {
             str.Clear();
             foreach (var leaf in leaves)
             {
-                string s = leaf.MakeString(pawn);
+                string s = leaf.MakeString(pawn, seed);
                 if (s != null)
                     str.Append(s);
             }

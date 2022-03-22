@@ -8,7 +8,6 @@ namespace SPM1
     {
         protected static List<(object obj, string key)> tempData = new List<(object obj, string key)>();
 
-
         public DescLeafType type = DescLeafType.Grammar;
         public RulePackDef rulePack;
         public string root;
@@ -16,7 +15,7 @@ namespace SPM1
         public string text;
         public bool onlyIfHasParts = true;
 
-        public virtual string MakeString(Pawn pawn)
+        public virtual string MakeString(Pawn pawn, DescriptionSeed seed)
         {
             switch (type)
             {
@@ -41,7 +40,17 @@ namespace SPM1
                     if (uses == null)
                         return null;
 
+                    if (seed != null)
+                    {
+                        int rand = seed.NextSeed();
+                        Rand.PushState(rand);
+                    }
+
                     string resolved = DescriptionGenerator.MakePart(root, pawn, uses);
+
+                    if(seed != null)
+                        Rand.PopState();
+
                     return resolved;
                 default:
                     return null;

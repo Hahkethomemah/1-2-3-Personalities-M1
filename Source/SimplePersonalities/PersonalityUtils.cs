@@ -46,6 +46,23 @@ namespace SPM1
             }
         }
 
+        private static string saveString;
+
+        [DebugAction("Simple Personalities", "Extract save string", actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        private static void ExtractSaveString(Pawn p)
+        {
+            saveString = p.ExtractPersonality();
+            Core.Log($"Extracted save string:");
+            Log.Message(saveString);
+        }
+
+        [DebugAction("Simple Personalities", "Insert save string", actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        private static void IntractSaveString(Pawn p)
+        {
+            p.IntractPersonality(saveString);
+            Core.Log($"Intracted save string!");
+        }
+
         public static bool ShouldHavePersonality(ThingWithComps thing, out Type compType)
         {
             compType = null;
@@ -86,6 +103,10 @@ namespace SPM1
 
         public static PersonalityVisibility GetPersonalityVisibility(ThingWithComps thing)
         {
+            // Don't show in preparation stage.
+            if (Current.ProgramState != ProgramState.Playing)
+                return PersonalityVisibility.Invisible;
+
             if (thing == null)
                 return PersonalityVisibility.Invisible;
 
@@ -93,6 +114,7 @@ namespace SPM1
             if (thing is not Pawn pawn)
                 return PersonalityVisibility.Invisible;
 
+            // If the pawn is of the player faction and is not an animal (animals are handled below)
             if (pawn.Faction != null && pawn.Faction.IsPlayer && !pawn.RaceProps.Animal)
                 return PersonalityVisibility.Visible;
 
@@ -108,11 +130,14 @@ namespace SPM1
                 return compAnimal.IsPersonalityKnown ? PersonalityVisibility.Visible : PersonalityVisibility.Hidden;
             }
 
-            // Code below is only for prisoners.
+            // Not player colony pawn, not animal.
             if (!pawn.IsPrisonerOfColony)
+            {
+                // Pawns of other factions are hidden.
                 return PersonalityVisibility.Hidden;
+            }
 
-            // This is for prisoners only.
+            // Code below here is for prisoners only.
             float maxRes = comp.GetMaxResistance();
             if (maxRes < 0f)
                 return PersonalityVisibility.Hidden;

@@ -35,6 +35,7 @@ namespace SPM1
         }
         private static List<PersonalityRoot> _allAnimal;
 
+        public string LabelColor => $"<color={Settings.ForcedTraitColor ?? color}>{label}</color>";
         public Type type = Type.HumanLike;
         public PersonalityDrive drive;
         public string color;
@@ -53,24 +54,22 @@ namespace SPM1
 
         public PersonalityTrait GetRandomCompatibleTrait(PersonalityVariant withVariant, PersonalityTrait except = null)
         {
-            if (traits.Count == 0)
-                return null;
-
-            var picked = traits.Where(t => t.IsCompatibleWith(withVariant)).RandomElement();
-            while (picked == except)
-                picked = traits.Where(t => t.IsCompatibleWith(withVariant)).RandomElement();
-            return picked;
+            return GetAllCompatibleTraits(withVariant, except).RandomElement();
         }
 
         public PersonalityTrait GetRandomCompatibleTrait(PersonalityVariant withVariant, HashSet<PersonalityTrait> except)
         {
-            if (traits.Count == 0)
-                return null;
+            return GetAllCompatibleTraits(withVariant, except).RandomElement();
+        }
 
-            var picked = traits.Where(t => t.IsCompatibleWith(withVariant)).RandomElement();
-            while (except.Contains(picked))
-                picked = traits.Where(t => t.IsCompatibleWith(withVariant)).RandomElement();
-            return picked;
+        public virtual IEnumerable<PersonalityTrait> GetAllCompatibleTraits(PersonalityVariant withVariant, HashSet<PersonalityTrait> except)
+        {
+            return traits.Where(t => t.IsCompatibleWith(withVariant) && (except == null || !except.Contains(t)));
+        }
+
+        public virtual IEnumerable<PersonalityTrait> GetAllCompatibleTraits(PersonalityVariant withVariant, PersonalityTrait except)
+        {
+            return traits.Where(t => t.IsCompatibleWith(withVariant) && t != except);
         }
 
         public IEnumerable<Rule> GetRules(string prefix, Pawn pawn)
@@ -79,7 +78,7 @@ namespace SPM1
                 yield return item;
 
             prefix += '_';
-            yield return new Rule_String(prefix + "labelCol", $"<color={Settings.ForcedTraitColor ?? color}>{label}</color>");
+            yield return new Rule_String(prefix + "labelCol", LabelColor);
         }
 
         public override void PostLoad()

@@ -8,11 +8,13 @@ namespace SPM1.Comps
         public bool IsPersonalityKnown;
         public int TicksSinceJoin = -1;
 
+        public override bool DoHediffs => Settings.DoAnimalHediffs;
+
         private int tickCounter;
 
         protected override Enneagram GenerateNewEnneagram()
         {
-            return EnneagramAnimal.Generate();
+            return EnneagramAnimal.Generate(parent as Pawn);
         }
 
         public override void PostExposeData()
@@ -29,6 +31,18 @@ namespace SPM1.Comps
 
             if (IsPersonalityKnown)
                 return;
+
+            // If it is an animal from another faction (enemy or friendly trader) then it's personality must be revelealed.
+            if (parent.Faction != null && !parent.Faction.IsPlayer)
+            {
+                // Temp fix: animals from hidden factions are, well, hidden.
+                if (parent.Faction.def.hidden)
+                    return;
+
+                IsPersonalityKnown = true;
+                OnPersonalityDiscovered(DiscoveryType.FromAnotherFaction);
+                return;
+            }
 
             const int INTERVAL = 120;
 
@@ -48,7 +62,37 @@ namespace SPM1.Comps
             }
         }
 
-        public void OnPersonalityDiscovered(DiscoveryType type, Pawn trainer = null)
+        public void FlagAsStartingAnimal()
+        {
+            if (IsPersonalityKnown)
+                return;
+
+            IsPersonalityKnown = true;
+            OnPersonalityDiscovered(DiscoveryType.FromStartingAnimal);
+        }
+
+        public void FlagAsTradeAnimal()
+        {
+            if (IsPersonalityKnown)
+                return;
+
+            IsPersonalityKnown = true;
+            OnPersonalityDiscovered(DiscoveryType.FromTrader);
+        }
+
+        public void OnTrain(Pawn trainer)
+        {
+            if (IsPersonalityKnown)
+                return;
+
+            if (Rand.Chance(Settings.AnimalPersonalityOnTrainChance))
+            {
+                IsPersonalityKnown = true;
+                OnPersonalityDiscovered(DiscoveryType.FromTrainAttempt, trainer);
+            }
+        }
+
+        protected void OnPersonalityDiscovered(DiscoveryType type, Pawn trainer = null)
         {
             EnsureHediffs();
 
@@ -60,6 +104,10 @@ namespace SPM1.Comps
 
                 case DiscoveryType.FromTrainAttempt:
                     Messages.Message("SP.AnimalReveal.Training".Translate(trainer.LabelShortCap, parent.LabelShortCap), MessageTypeDefOf.PositiveEvent);
+                    break;
+
+                case DiscoveryType.FromAnotherFaction:
+                    // Nothing to do here.
                     break;
             }
         }
@@ -106,8 +154,11 @@ namespace SPM1.Comps
 
         public enum DiscoveryType
         {
+            FromStartingAnimal,
             FromTimer,
-            FromTrainAttempt
+            FromTrainAttempt,
+            FromAnotherFaction,
+            FromTrader
         }
     }
 }

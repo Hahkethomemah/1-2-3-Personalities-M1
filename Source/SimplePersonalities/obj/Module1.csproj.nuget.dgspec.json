@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\Module1.csproj": {}
   },
   "projects": {
-    "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\Module1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\Module1.csproj",
         "projectName": "SP_Module1",
-        "projectPath": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj",
-        "packagesPath": "C:\\Users\\The Superior One\\.nuget\\packages\\",
-        "outputPath": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\obj\\",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\Module1.csproj",
+        "packagesPath": "C:\\Users\\spain\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\The Superior One\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\spain\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "net472": {
+            "targetAlias": "net472",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "dependencies": {
             "Krafs.Rimworld.Ref": {
               "target": "Package",
@@ -45,10 +47,10 @@
             "Lib.Harmony": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[2.1.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,7 +7,7 @@ namespace SPM1
 {
     public static class DescriptionGenerator
     {
-        public static string Generate(DescStack stack, Pawn pawn, int? randomSeed)
+        public static string Generate(DescStack stack, Pawn pawn, DescriptionSeed seed)
         {
             if (stack == null || pawn == null)
             {
@@ -15,12 +15,19 @@ namespace SPM1
                 return null;
             }
 
-            if (randomSeed != null)
-                Rand.PushState(randomSeed.Value);
+            seed ??= DescriptionSeed.Default;
+            seed.ResetReader();
+            if (seed.IsUniform)
+            {
+                // Uniform seeds come from legacy seed system - in these cases,
+                // we only want to push state once.
+                Rand.PushState(seed.Seeds[0]);
+                seed = null;
+            }
 
             try
             {
-                return stack.MakeString(pawn);
+                return stack.MakeString(pawn, seed);
             }
             catch (Exception e)
             {
@@ -29,7 +36,8 @@ namespace SPM1
             }
             finally
             {
-                if (randomSeed != null)
+                // Only when seed is uniform.
+                if (seed == null)
                     Rand.PopState();
             }
         }

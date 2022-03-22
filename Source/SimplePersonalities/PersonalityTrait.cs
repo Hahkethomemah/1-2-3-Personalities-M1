@@ -11,6 +11,8 @@ namespace SPM1
     /// </summary>
     public class PersonalityTrait : Def, IRuleSupplier
     {
+        public string LabelColor => $"<color={Settings.ForcedTraitColor ?? Root.color}>{label}</color>";
+
         public List<PersonalityVariant> incompatibleVariants;
 
         [XmlIgnore]
@@ -38,7 +40,7 @@ namespace SPM1
                 yield return item;
 
             prefix += '_';
-            yield return new Rule_String(prefix + "labelCol", $"<color={Settings.ForcedTraitColor ?? Root.color}>{label}</color>");
+            yield return new Rule_String(prefix + "labelCol", LabelColor);
         }
 
         public override string ToString()

@@ -14,7 +14,7 @@ namespace SPM1.Patches
             if (enneagram == null || !enneagram.IsValid || PersonalityUtils.GetPersonalityVisibility(pawn) == PersonalityVisibility.Invisible)
                 return;
 
-            __result += new Vector2(0f, PersonalityUI.HEIGHT);
+            __result += new Vector2(0f, Settings.ExtraBioHeight);
         }
     }
 }

@@ -85,7 +85,7 @@
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.0.4": {
+      "Lib.Harmony/2.1.1": {
         "type": "package",
         "compile": {
           "lib/net472/0Harmony.dll": {}
@@ -188,16 +188,16 @@
         "ref/net472/mscorlib.dll"
       ]
     },
-    "Lib.Harmony/2.0.4": {
-      "sha512": "m4Lm5W2pYU6+aTJpeUzHsX12chKXynIZPlsM5tV6O+WQxs3xa+teQHBjCNFXePDB1HXiiuAmtjyCo/E9fRuSIg==",
+    "Lib.Harmony/2.1.1": {
+      "sha512": "CZiVcq01bVIjL2baWW5SVGZWyd6ew8adFp4BB2bzZfIGcWkTEto0G9sKu+9HDrEd75qBq3EHnZxx/gizi4NnqA==",
       "type": "package",
-      "path": "lib.harmony/2.0.4",
+      "path": "lib.harmony/2.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "HarmonyLogo.png",
         "LICENSE",
-        "lib.harmony.2.0.4.nupkg.sha512",
+        "lib.harmony.2.1.1.nupkg.sha512",
         "lib.harmony.nuspec",
         "lib/net35/0Harmony.dll",
         "lib/net35/0Harmony.xml",
@@ -207,6 +207,8 @@
         "lib/net472/0Harmony.xml",
         "lib/net48/0Harmony.dll",
         "lib/net48/0Harmony.xml",
+        "lib/net5.0/0Harmony.dll",
+        "lib/net5.0/0Harmony.xml",
         "lib/netcoreapp3.0/0Harmony.dll",
         "lib/netcoreapp3.0/0Harmony.xml",
         "lib/netcoreapp3.1/0Harmony.dll",
@@ -217,23 +219,23 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "Krafs.Rimworld.Ref >= 1.2.2905",
-      "Lib.Harmony >= 2.0.4"
+      "Lib.Harmony >= 2.1.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\The Superior One\\.nuget\\packages\\": {}
+    "C:\\Users\\spain\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\Module1.csproj",
       "projectName": "SP_Module1",
-      "projectPath": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\Module1.csproj",
-      "packagesPath": "C:\\Users\\The Superior One\\.nuget\\packages\\",
-      "outputPath": "E:\\Steam Games\\steamapps\\common\\RimWorld\\Mods\\Simple Personalities\\Source\\SimplePersonalities\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\Module1.csproj",
+      "packagesPath": "C:\\Users\\spain\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\SimplePersonalities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\The Superior One\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\spain\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -245,6 +247,7 @@
       },
       "frameworks": {
         "net472": {
+          "targetAlias": "net472",
           "projectReferences": {}
         }
       },
@@ -256,6 +259,7 @@
     },
     "frameworks": {
       "net472": {
+        "targetAlias": "net472",
         "dependencies": {
           "Krafs.Rimworld.Ref": {
             "target": "Package",
@@ -264,10 +268,10 @@
           "Lib.Harmony": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[2.0.4, )"
+            "version": "[2.1.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.410\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,16 +1,32 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using Verse;
 
 namespace SPM1.Comps
 {
     public class CompEnneagram : ThingComp
     {
+        private static StringBuilder str = new StringBuilder();
+
         public virtual bool NeedsNewPersonality => Enneagram == null || !Enneagram.IsValid;
 
         public Listing_Standard Listing;
-        public Enneagram Enneagram;
-        public int RandomSeed = -1;
 
+        public Enneagram Enneagram
+        {
+            get
+            {
+                if(_enneagram == null)
+                    AssignNewPersonality();
+                return _enneagram;
+            }
+            protected set => _enneagram = value;
+        }
+        public DescriptionSeed Seed;
+
+        public virtual bool DoHediffs => true;
+
+        private Enneagram _enneagram;
         private string description;
         private float maxResistance = -1;
 
@@ -18,17 +34,89 @@ namespace SPM1.Comps
         {
             base.PostExposeData();
 
-            Scribe_Deep.Look(ref Enneagram, "spm_Enneagram");
+            Scribe_Deep.Look(ref _enneagram, "spm_Enneagram");
             Scribe_Values.Look(ref maxResistance, "spm_MaxResistance", -1);
-            Scribe_Values.Look(ref RandomSeed, "spm_RandomSeed", -1);
+            int oldSeed = -1;
+            Scribe_Values.Look(ref oldSeed, "spm_RandomSeed", -1);
+            Scribe_Deep.Look(ref Seed, "spm_Seed");
 
-            if (RandomSeed == -1)
-                GenerateNewSeed();
+            if (Settings.FreezeDescriptions)
+            {
+                Scribe_Values.Look(ref description, "sp_cachedDescription");
+            }
+
+            if (oldSeed != -1)
+            {
+                Seed = new DescriptionSeed(5, oldSeed);
+                Core.Warn("Converted from old seed to new.");
+            }
         }
 
-        protected virtual void GenerateNewSeed()
+        /// <summary>
+        /// Note: This is not used internally. This is for external mod support,
+        /// such as character editor or altered carbon.
+        /// </summary>
+        public virtual string ExtractSaveString()
         {
-            RandomSeed = Rand.Range(1, 1000000);
+            const string NULL = "<NULL>";
+
+            str.Clear();
+            str.Append(Enneagram?.Root?.defName ?? NULL).Append('|');
+            str.Append(Enneagram?.Variant?.defName ?? NULL).Append('|');
+            str.Append(Enneagram?.MainTrait?.defName ?? NULL).Append('|');
+            str.Append(Enneagram?.SecondaryTrait?.defName ?? NULL).Append('|');
+            str.Append(Enneagram?.OptionalTrait?.defName ?? NULL).Append('|');
+            str.Append(Seed?.ToSaveString() ?? NULL);
+
+            return str.ToString();
+        }
+
+        /// <summary>
+        /// Note: This is not used internally. This is for external mod support,
+        /// such as character editor or altered carbon.
+        /// </summary>
+        public virtual void InsertSaveString(string saveString)
+        {
+            const string NULL = "<NULL>";
+            if (string.IsNullOrWhiteSpace(saveString))
+                return;
+
+            string[] split = saveString.Split('|');
+            if (split.Length != 6)
+                return;
+
+            if(Enneagram == null)
+            {
+                Core.Error("Enneagram null when trying to read in string save data!");
+                return;
+            }
+
+            T ReadDef<T>(string name) where T : Def
+            {
+                if (name == NULL)
+                    return null;
+                return (T)DefDatabase<T>.GetNamed(name, true);
+            }
+
+            // Personality.
+            Enneagram.Root = ReadDef<PersonalityRoot>(split[0]);
+            Enneagram.Variant = ReadDef<PersonalityVariant>(split[1]);
+            Enneagram.MainTrait = ReadDef<PersonalityTrait>(split[2]);
+            Enneagram.SecondaryTrait = ReadDef<PersonalityTrait>(split[3]);
+            Enneagram.OptionalTrait = ReadDef<PersonalityTrait>(split[4]);
+
+            // Seed.
+            if (split[5] != NULL)
+                Seed = new DescriptionSeed(split[5]);
+            else
+                GenerateNewSeed();
+
+            RegenerateDescription();
+        }
+
+        public virtual void GenerateNewSeed()
+        {
+            Seed = new DescriptionSeed();
         }
 
         public override string GetDescriptionPart()
@@ -41,14 +129,18 @@ namespace SPM1.Comps
             base.PostSpawnSetup(respawningAfterLoad);
 
             if (NeedsNewPersonality)
-            {
                 AssignNewPersonality();
-                if (RandomSeed == -1)
-                    RandomSeed = Rand.Range(1, 1000000);
-            }
-            else
+            
+            EnsureHediffs();
+        }
+
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            int i = 0;
+            i++;
+            foreach (var gizmo in base.CompGetGizmosExtra())
             {
-                EnsureHediffs();
+                yield return gizmo;
             }
         }
 
@@ -60,12 +152,13 @@ namespace SPM1.Comps
 
         public string GetDescription()
         {
-            if (Enneagram == null || parent is not Pawn pawn)
+            if (parent is not Pawn pawn)
                 return null;
 
             if (description != null)
                 return description;
-            description = Enneagram.GenerateDescriptionFor(pawn, RandomSeed);
+
+            description = Enneagram.GenerateDescriptionFor(pawn, Seed);
             return description;
         }
 
@@ -85,16 +178,16 @@ namespace SPM1.Comps
             return maxResistance;
         }
 
-        public virtual void AssignNewPersonality()
+        public void AssignNewPersonality()
         {
             GenerateNewSeed();
-            Enneagram = GenerateNewEnneagram();
+            _enneagram = GenerateNewEnneagram();
             EnsureHediffs();
         }
 
         protected virtual Enneagram GenerateNewEnneagram()
         {
-            return Enneagram.Generate();
+            return Enneagram.Generate(parent as Pawn);
         }
 
         protected virtual bool UseIfKnownHediffs() => false;
@@ -130,11 +223,14 @@ namespace SPM1.Comps
             List<HediffDef> hediffs = new List<HediffDef>();
             List<Hediff> added = new List<Hediff>();
 
-            // Add hediffs required by root.
-            hediffs.AddRange(Enneagram.Root.hediffs);
+            if (DoHediffs)
+            {
+                // Add hediffs required by root.
+                hediffs.AddRange(Enneagram.Root.hediffs);
 
-            if(UseIfKnownHediffs())
-                hediffs.AddRange(Enneagram.Root.hediffsIfKnown);
+                if (UseIfKnownHediffs())
+                    hediffs.AddRange(Enneagram.Root.hediffsIfKnown);
+            }
 
             // Add required hediffs.
             foreach (var def in hediffs)

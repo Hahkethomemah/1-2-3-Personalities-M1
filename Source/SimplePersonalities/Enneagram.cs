@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using Verse;
 
 namespace SPM1
@@ -7,25 +8,30 @@ namespace SPM1
     {
         private static HashSet<PersonalityTrait> tempHashset = new HashSet<PersonalityTrait>();
 
-        public static Enneagram Generate()
+        public static Enneagram Generate(Pawn forPawn)
         {
             var gram = new Enneagram();
-            var root = PersonalityRoot.AllHuman.RandomElement();
+            var root = AllRootsFor(forPawn).RandomElement();
 
             gram.Root = root;
             gram.Variant = root.GetRandomVariant();
             gram.MainTrait = root.GetRandomCompatibleTrait(gram.Variant);
-            gram.SecondaryTrait = PersonalityRoot.AllHuman.RandomElement().GetRandomCompatibleTrait(gram.Variant, gram.MainTrait);
+            gram.SecondaryTrait = AllRootsFor(forPawn).RandomElement().GetRandomCompatibleTrait(gram.Variant, gram.MainTrait);
 
             if (Rand.Chance(1f / 3f))
             {
                 tempHashset.Clear();
                 tempHashset.Add(gram.MainTrait);
                 tempHashset.Add(gram.SecondaryTrait);
-                gram.OptionalTrait = PersonalityRoot.AllHuman.RandomElementExcept(root).GetRandomCompatibleTrait(gram.Variant, tempHashset);
+                gram.OptionalTrait = AllRootsFor(forPawn).RandomElementExcept(root).GetRandomCompatibleTrait(gram.Variant, tempHashset);
             }
 
             return gram;
+        }
+
+        public static IEnumerable<PersonalityRoot> AllRootsFor(Pawn pawn)
+        {
+            return PersonalityRoot.AllHuman;
         }
 
         public virtual bool IsValid => Root != null && Variant != null && MainTrait != null && SecondaryTrait != null;
@@ -39,6 +45,20 @@ namespace SPM1
         // Will optionally exist:
         public PersonalityTrait OptionalTrait;
 
+        public Enneagram() { }
+
+        public Enneagram(Enneagram toCreateCopyOf)
+        {
+            if (toCreateCopyOf == null)
+                return;
+
+            this.Root = toCreateCopyOf.Root;
+            this.Variant = toCreateCopyOf.Variant;
+            this.MainTrait = toCreateCopyOf.MainTrait;
+            this.SecondaryTrait = toCreateCopyOf.SecondaryTrait;
+            this.OptionalTrait = toCreateCopyOf.OptionalTrait;
+        }
+
         public void ExposeData()
         {
             Scribe_Defs.Look(ref Root, "root");
@@ -48,12 +68,12 @@ namespace SPM1
             Scribe_Defs.Look(ref OptionalTrait, "optionalTrait");
         }
 
-        public virtual string GenerateDescriptionFor(Pawn pawn, int? randomSeed)
+        public virtual string GenerateDescriptionFor(Pawn pawn, DescriptionSeed seed)
         {
             if (pawn == null)
                 return null;
 
-            return DescriptionGenerator.Generate(SPDefOf.SP_HumanStack, pawn, randomSeed);
+            return DescriptionGenerator.Generate(SPDefOf.SP_HumanStack, pawn, seed);
         }
 
         public override string ToString()

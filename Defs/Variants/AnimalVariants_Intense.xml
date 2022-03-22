@@ -3,6 +3,7 @@
   <SPM1.PersonalityVariant>
     <defName>SP_Animal_BadBoy</defName>
     <label>bad {0}</label>
+    <ignoreIllegalLabelCharacterConfigError>True</ignoreIllegalLabelCharacterConfigError>
     <genderReplace>
       <li>boy/girl</li>
     </genderReplace>

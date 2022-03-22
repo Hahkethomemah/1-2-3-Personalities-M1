@@ -15,7 +15,7 @@ namespace SPM1.Patches
                 return;
 
             var vis = PersonalityUtils.GetPersonalityVisibility(pawn);
-            PersonalityUI.DrawPersonalityBio(pawn, comp, new Rect(rect.x, rect.yMax - PersonalityUI.HEIGHT, rect.width, rect.height), vis);
+            PersonalityUI.DrawPersonalityBio(pawn, comp, new Rect(rect.x, rect.yMax - Settings.ExtraBioHeight, rect.width, rect.height), vis);
         }
     }
 }

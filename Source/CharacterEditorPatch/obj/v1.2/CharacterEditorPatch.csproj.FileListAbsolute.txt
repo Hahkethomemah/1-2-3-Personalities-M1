@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\1.2_CharacterEditor\Assemblies\SPM1.CharacterEditor.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\CharacterEditorPatch\obj\v1.2\CharacterEditorPatch.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\CharacterEditorPatch\obj\v1.2\CharacterEditorPatch.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\CharacterEditorPatch\obj\v1.2\CharacterEditorPatch.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\CharacterEditorPatch\obj\v1.2\CharacterEditorPatch.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\CharacterEditorPatch\obj\v1.2\SPM1.CharacterEditor.dll

@@ -3,6 +3,7 @@
   <SPM1.PersonalityVariant>
     <defName>SP_Animal_GoodBoy</defName>
     <label>good {0}</label> <!-- The {0} is replaced using the genderReplace list -->
+    <ignoreIllegalLabelCharacterConfigError>True</ignoreIllegalLabelCharacterConfigError>
     <genderReplace>
       <li>boy/girl</li> <!-- The first item is male (or genderless), second is female -->
     </genderReplace>
@@ -46,6 +47,7 @@
   <SPM1.PersonalityVariant>
     <defName>SP_Animal_Alpha</defName>
     <label>alpha {0}</label>
+    <ignoreIllegalLabelCharacterConfigError>True</ignoreIllegalLabelCharacterConfigError>
     <genderReplace>
       <li>male/female</li>
     </genderReplace>
@@ -74,6 +76,7 @@
   <SPM1.PersonalityVariant>
     <defName>SP_Animal_GoodestBoy</defName>
     <label>goodest {0}</label>
+    <ignoreIllegalLabelCharacterConfigError>True</ignoreIllegalLabelCharacterConfigError>
     <genderReplace>
       <li>boy/girl</li>
     </genderReplace>

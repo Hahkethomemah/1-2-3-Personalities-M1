@@ -1,17 +1,25 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31512.422
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module1", "SimplePersonalities\Module1.csproj", "{964B42BC-3513-4243-9EF1-CEF1B13D6A20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrepareCarefullyPatch", "PrepareCarefullyPatch\PrepareCarefullyPatch.csproj", "{2426FF63-080E-45A8-904D-B4370FE35B6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		v1.2|FullBuild = v1.2|FullBuild
+		v1.3|FullBuild = v1.3|FullBuild
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.2|FullBuild.ActiveCfg = v1.2|Any CPU
 		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.2|FullBuild.Build.0 = v1.2|Any CPU
+		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.3|FullBuild.ActiveCfg = v1.3|Any CPU
+		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.3|FullBuild.Build.0 = v1.3|Any CPU
+		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.2|FullBuild.ActiveCfg = v1.2|Any CPU
+		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.2|FullBuild.Build.0 = v1.2|Any CPU
+		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.3|FullBuild.ActiveCfg = v1.3|Any CPU
+		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.3|FullBuild.Build.0 = v1.3|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

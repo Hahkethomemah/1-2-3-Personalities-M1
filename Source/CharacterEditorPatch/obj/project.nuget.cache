@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "th6zSFF52FrDpNjOr/HNQuKfJNGdWVBn5BmBQlgaeLHdng/GcaHnXogWs2GSfdH4XNqf5Yd7cqJdwU/cAS+YCQ==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Simple-Personalities\\Source\\CharacterEditorPatch\\CharacterEditorPatch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\spain\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3056-beta\\krafs.rimworld.ref.1.3.3056-beta.nupkg.sha512",
+    "C:\\Users\\spain\\.nuget\\packages\\lib.harmony\\2.1.0\\lib.harmony.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
