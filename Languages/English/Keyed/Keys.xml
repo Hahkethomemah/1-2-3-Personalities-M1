@@ -35,6 +35,7 @@
 <SP.CharacterEditorPatchLabel>Patching character editor...</SP.CharacterEditorPatchLabel>
 <SP.DoesNotHavePersonality>This pawn does not have a personality.</SP.DoesNotHavePersonality>
 <SP.SeedExplaination>Each seed changes a particular part of the description.\nDepending on the description type and length, some seed values may do nothing.</SP.SeedExplaination>
+<SP.TabLabel>Worldview</SP.TabLabel>
 
 <!-- Settings menu (SPS stands for Simple Personalities Settings) -->
 <SPS.Header>Hover over an item to see a description.\nRight click to reset to default value.\nNote: Some settings require a restart to take effect.</SPS.Header>
@@ -53,6 +54,8 @@
 <SPS.AnimalPersonalityOnTrainChance>Personality reveal on train chance:The percentage chance for a tame animal's personality to be revealed upon a training attempt.</SPS.AnimalPersonalityOnTrainChance>
 <SPS.ExtraBioHeight>Extra bio height:The additional height that is added to a character's bio window, to accomodate the personality description. Decrease if the window goes off the top of the screen.</SPS.ExtraBioHeight>
 <SPS.FreezeDescriptions>Freeze descriptions:Rather than using a random seed system, the character's personality description is saved with the map, ensuring description consistency at the cost of save file size and load time.\nAfter this is enabled, changing the Monochrome descriptions option will not have any effect.</SPS.FreezeDescriptions>
+<SPS.UseWorldviewTab>Enable Worldview Tab:Add an extra tab to pawns that displays the personality, rather than putting the personality in the Bio tab./nIn future, this tab will also show information from Module 3.</SPS.UseWorldviewTab>
+<SPS.ShowPersonalityRevealMessage>Show Personality Reveal Message:Enables or disables showing a message when an animal's personality is revealed. The message may become annoying when you have many animals in a colony.</SPS.ShowPersonalityRevealMessage>
 
 <SPS.DoAnimalHediffs>Enable animal buffs:Enables or disables animal hediffs (bonuses).</SPS.DoAnimalHediffs>
 

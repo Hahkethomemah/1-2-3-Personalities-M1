@@ -1,12 +1,18 @@
 ﻿using HarmonyLib;
+using SPM1.UI;
 using System;
+using System.Collections.Generic;
+using System.Xml;
 using UnityEngine;
 using Verse;
 
 namespace SPM1
 {
+    [HotSwappable]
     public class Core : Mod
     {
+        class HotSwappable : Attribute { }
+
         public static void Log(string msg)
         {
             Verse.Log.Message($"<color=#34eb92>[Simple Personalities]</color> {msg}");
@@ -43,13 +49,44 @@ namespace SPM1
                 Error("Failed to patch 1 or more methods! The mod will probably not work!", e);
             }
 
-            LongEventHandler.QueueLongEvent(Load, "SP.LoadingLabel", false, null);
+            GetSettings<Settings>();
+
+            if (Settings.UseWorldviewTab)
+            {
+                try
+                {
+                    var patch = CreatePawnPatchOperation();
+                    var list = pack.Patches as List<PatchOperation>;
+                    list.Add(patch);
+                    Log("Patched tab!");
+                }
+                catch (Exception e)
+                {
+                    Error("Failed to create dynamic patch!", e);
+                }
+            }
         }
 
-        public void Load()
+        private PatchOperation CreatePawnPatchOperation()
         {
-            // Do any work here.
-            GetSettings<Settings>();
+            var op = new PatchOperationInsert();
+            void Set(string name, object value)
+            {
+                AccessTools.Field(typeof(PatchOperationInsert), name).SetValue(op, value);
+            }
+
+            Set("xpath", "Defs/ThingDef[@Name='BasePawn']/inspectorTabs/li[text()='ITab_Pawn_Character']");
+
+            var doc = new XmlDocument();
+            var value = doc.CreateElement("value");
+            var element = doc.CreateElement("li");
+            element.InnerText = typeof(ITab_Pawn_Worldview).FullName;
+            value.AppendChild(element);
+
+            var container = new XmlContainer() { node = value };
+            Set("value", container);
+
+            return op;
         }
 
         public override string SettingsCategory()

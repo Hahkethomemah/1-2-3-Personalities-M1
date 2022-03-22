@@ -25,7 +25,7 @@ namespace SPM1
 
             string trs = isAnimal ? "SP.HiddenAnimalPersonality".Translate() : isPrisoner ? "SP.HiddenPrisonerPersonality".Translate() : "SP.HiddenPersonality".Translate();
             string msg = $"<i>{trs}</i>";
-            float maxHeight = Settings.ExtraBioHeight - listing.CurHeight;
+            float maxHeight = Settings.UseWorldviewTab ? rect.height - listing.CurHeight : Settings.ExtraBioHeight - listing.CurHeight;
 
             listing.Label(visibility == PersonalityVisibility.Hidden ? msg : comp.GetDescription(), maxHeight);
 

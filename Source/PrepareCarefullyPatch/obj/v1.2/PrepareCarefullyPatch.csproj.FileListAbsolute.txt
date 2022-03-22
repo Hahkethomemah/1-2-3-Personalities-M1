@@ -1,7 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\1.2_PrepareCarefully\Assemblies\SPM1.PrepareCarefully.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\PrepareCarefullyPatch\obj\v1.2\PrepareCarefullyPatch.AssemblyInfoInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\PrepareCarefullyPatch\obj\v1.2\PrepareCarefullyPatch.AssemblyInfo.cs
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\PrepareCarefullyPatch\obj\v1.2\PrepareCarefullyPatch.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\PrepareCarefullyPatch\obj\v1.2\SPM1.PrepareCarefully.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\PrepareCarefullyPatch\obj\v1.2\PrepareCarefullyPatch.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Simple-Personalities\Source\PrepareCarefullyPatch\obj\v1.2\PrepareCarefullyPatch.GeneratedMSBuildEditorConfig.editorconfig
