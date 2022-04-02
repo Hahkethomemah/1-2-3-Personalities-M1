@@ -100,4 +100,14 @@
     <label>escape artist</label>
   </SPM1.PersonalityVariant>
 
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_KitchenRaider</defName>
+    <label>kitchen raider</label>
+  </SPM1.PersonalityVariant>
+
+  <SPM1.PersonalityVariant>
+    <defName>SP_Animal_WalkingDisaster</defName>
+    <label>walking disaster</label>
+  </SPM1.PersonalityVariant>
+
 </Defs>

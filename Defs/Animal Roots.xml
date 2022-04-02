@@ -61,6 +61,9 @@
       <li>SP_Animal_Stalker</li>
       <li>SP_Animal_SpoiledPup</li>
       <li>SP_Animal_MailmansNightmare</li>
+      <li>SP_Animal_ExtremeHorndog</li>
+      <li>SP_Animal_Whirlwind</li>
+      <li>SP_Animal_Sexual</li>
     </variants>
 
     <hediffsIfKnown>
@@ -96,6 +99,8 @@
       <li>SP_Animal_WaggingMachine</li>
       <li>SP_Animal_FartHopper</li>
       <li>SP_Animal_EscapeArtist</li>
+      <li>SP_Animal_KitchenRaider</li>
+      <li>SP_Animal_WalkingDisaster</li>
     </variants>
 
     <hediffsIfKnown>

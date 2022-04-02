@@ -188,7 +188,7 @@
             <li>shows_that->turns out to be</li>
             <li>alsotraitcol->also [TRAIT_labelCol]</li>
             <li>alsotraitcol->[TRAIT_labelCol] as well</li>
-        <li>desc2->Sometimes [PAWNronoun] also shows [PAWN_objective]self from the [TRAIT_labelCol] side.</li>
+        <li>desc2->Sometimes [PAWN_pronoun] also shows [PAWN_objective]self from the [TRAIT_labelCol] side.</li>
         <li>desc2->After a few [beers], [PAWN_possessive] [TRAIT_labelCol] nature emerges.</li>
             <li>beers->beers</li>
             <li>beers->drinks</li>
