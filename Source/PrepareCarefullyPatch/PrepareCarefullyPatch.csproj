@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <OutputType>Library</OutputType>
-    <Configurations>v1.2;v1.3</Configurations>
+    <Configurations>v1.2;v1.3;v1.4</Configurations>
     <LangVersion>preview</LangVersion>
     <NoStdLib>true</NoStdLib>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -14,7 +14,7 @@
 
   <!-- All versions: -->
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony" Version="2.1.1" ExcludeAssets="runtime" />
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" ExcludeAssets="runtime" />
   </ItemGroup>
 
   <!-- 1.2: -->
@@ -39,6 +39,31 @@
 
   <ItemGroup Condition="'$(Configuration)|$(Platform)'=='v1.3|AnyCPU'">
     <PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.3102" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimplePersonalities\Module1.csproj">
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EdBPrepareCarefully">
+      <HintPath>EdBPrepareCarefully.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 1.4: -->
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v1.4|AnyCPU'">
+    <DebugType>none</DebugType>
+    <OutputPath>..\..\1.4_PrepareCarefully\Assemblies\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='v1.4|AnyCPU'">
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3542" />
   </ItemGroup>
 
   <ItemGroup>

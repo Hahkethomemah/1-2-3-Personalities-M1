@@ -20,7 +20,7 @@ namespace SPM1.Patches
 
             GUI.BeginGroup(rect);
 
-            Rect rect6 = new Rect(rect.width - 24f - 230f, 0f, 120f, 30f);
+            Rect rect6 = new Rect(rect.width - 24f - 320f, 0f, 120f, 30f);
             if (Widgets.ButtonText(rect6, "SP.EditPersonality".Translate(), true, true, true))
             {
                 SoundDefOf.Tick_Tiny.PlayOneShotOnCamera(null);
