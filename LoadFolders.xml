@@ -10,4 +10,9 @@
     <li IfModActive="EdB.PrepareCarefully">1.3_PrepareCarefully</li>
     <li IfModActive="EdB.PrepareCarefully.UnofficialPatch">1.3_PrepareCarefully</li>
   </v1.3>
+  <v1.4>
+    <li>/</li>
+    <li>1.4</li>
+    <li IfModActive="edb.preparecarefully.alonske.fork">1.4_PrepareCarefully</li>
+  </v1.4>
 </loadFolders>
