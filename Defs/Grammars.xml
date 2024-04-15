@@ -616,10 +616,52 @@
         <li>psychoSecondary->[PAWN_pronoun] volunteers every time the prisoners need to be taken care of.</li>
         <li>psychoSecondary->[PAWN_pronoun] is completely devoid of empathy.</li>
         
-        <!-- first August update -->
+        <!-- August 2021 update -->
         <li>quoteweird->“El Psy Kongroo.”</li>
         <li>quoteweird->“Lorem ipsum dolor sit amet...”</li>
         <li>quoteweird->“In gi rum imus noc te et con sumi.”</li>
+
+
+        <!-- December 2022 update -->
+        <li>desc1->What distinguishes [PAWN_nameDef][fromothers] is how [very2] [TRAIT_labelCol] [PAWN_pronoun] is</li>
+        <li>fromothers-> from others</li>
+        <li>fromothers-> from other people</li>
+        <li>fromothers-> from other colonists</li>
+        <li>fromothers-></li>
+
+        <li>desc1->[PAWN_nameDef] is[byfar] the most [TRAIT_labelCol] person around.</li>
+        <li>byfar-> by far</li>
+        <li>byfar-> unquestionably</li>
+        <li>byfar-> without doubt</li>
+        <li>byfar-> by a long shot</li>
+        <li>byfar-></li>
+
+        <li>desc1->Being more [TRAIT_labelCol] than [PAWN_nameDef] is [impossible].</li>
+        <li>impossible->impossible</li>
+        <li>impossible->near impossible</li>
+        <li>impossible->very unlikely</li>
+        <li>impossible->impossible</li>
+
+        <li>desc1->It's [notimpossible], but matching [PAWN_nameDef] in how [TRAIT_labelCol] [PAWN_pronoun] is [noteasytask].</li>
+        <li>notimpossible->not impossible</li>
+        <li>notimpossible->possible</li>
+        <li>noteasytask->isn't an easy task</li>
+        <li>noteasytask->isn't something many can do</li>
+
+        <li>desc1->[PAWN_nameDef] is an epitome of a [TRAIT_labelCol] person.</li>
+
+
+        <li>desc2->[sometimes1] [PAWN_pronoun] has trouble controlling how [TRAIT_labelCol] [PAWN_pronoun] can be.</li>
+        <li>desc2->[PAWN_pronoun] doesn't seem to be aware how [TRAIT_labelCol] [PAWN_pronoun] can be.</li>
+        <li>desc2->[weirdly] enough, [PAWN_pronoun] can be [TRAIT_labelCol] even more.</li>
+        <li>desc2->Second thing you'll notice about [PAWN_objective] is how [TRAIT_labelCol] [PAWN_pronoun] becomes [sometimes1].</li>
+        <li>desc2->[PAWN_pronoun] accepted that [PAWN_pronoun] is also be [quite] [TRAIT_labelCol].</li>
+
+        <li>desc3->[timeperiod], [PAWN_nameDef] takes part in a [bizarre] ceremony.</li>
+        <li>timeperiod->Once a day</li>
+        <li>timeperiod->Three times a day</li>
+        <li>timeperiod->Once a week</li>
+        <li>timeperiod->Once a year</li>
 
       </rulesStrings>
     </rulePack>
