@@ -9,14 +9,18 @@
     <LangVersion>preview</LangVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <Configurations>v1.2;v1.3;v1.4</Configurations>
+    <Configurations>v1.2;v1.3;v1.4;v1.5</Configurations>
     <AssemblyName>SP_Module1</AssemblyName>
     <RootNamespace>SPM1</RootNamespace>
   </PropertyGroup>
 
   <!-- Libraries used regardless of target version -->
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony" Version="2.2.2" ExcludeAssets="runtime" />
+    <PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" ExcludeAssets="runtime" />
   </ItemGroup>
 
   <!-- _____ 1.2 _____ -->
@@ -62,6 +66,27 @@
     <OutputPath>..\..\1.4\Assemblies\</OutputPath>
     <Optimize>true</Optimize>
     <DefineConstants>TRACE;V14</DefineConstants>
+  </PropertyGroup>
+
+  <!-- _____ 1.5 _____ -->
+
+  <!-- Rimworld assembly refs for latest 1.5 -->
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='v1.5|AnyCPU'">
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.5.4063</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <!-- Output -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v1.5|AnyCPU'">
+    <DebugType>none</DebugType>
+    <OutputPath>..\..\1.5\Assemblies\</OutputPath>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;V15</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PublicizeAll>true</PublicizeAll>
   </PropertyGroup>
 
 </Project>

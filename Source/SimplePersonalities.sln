@@ -11,6 +11,7 @@ Global
 		v1.2|FullBuild = v1.2|FullBuild
 		v1.3|FullBuild = v1.3|FullBuild
 		v1.4|FullBuild = v1.4|FullBuild
+		v1.5|FullBuild = v1.5|FullBuild
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.2|FullBuild.ActiveCfg = v1.2|Any CPU
@@ -19,12 +20,16 @@ Global
 		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.3|FullBuild.Build.0 = v1.3|Any CPU
 		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.4|FullBuild.ActiveCfg = v1.4|Any CPU
 		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.4|FullBuild.Build.0 = v1.4|Any CPU
+		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.5|FullBuild.ActiveCfg = v1.5|Any CPU
+		{964B42BC-3513-4243-9EF1-CEF1B13D6A20}.v1.5|FullBuild.Build.0 = v1.5|Any CPU
 		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.2|FullBuild.ActiveCfg = v1.2|Any CPU
 		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.2|FullBuild.Build.0 = v1.2|Any CPU
 		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.3|FullBuild.ActiveCfg = v1.3|Any CPU
 		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.3|FullBuild.Build.0 = v1.3|Any CPU
 		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.4|FullBuild.ActiveCfg = v1.4|Any CPU
 		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.4|FullBuild.Build.0 = v1.4|Any CPU
+		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.5|FullBuild.ActiveCfg = v1.5|Any CPU
+		{2426FF63-080E-45A8-904D-B4370FE35B6C}.v1.5|FullBuild.Build.0 = v1.5|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,18 +1,20 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using SPM1.UI;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
 
 namespace SPM1.Patches
 {
-    [HarmonyPatch(typeof(Page_ConfigureStartingPawns), "DrawPortraitArea")]
+    [HarmonyPatch(typeof(StartingPawnUtility), "DrawPortraitArea")]
     static class Patch_Page_ConfigureStartingPawns_DrawPortraitArea
     {
-        static void Postfix(Pawn ___curPawn, Rect rect)
+        static void Postfix(int pawnIndex, Rect rect)
         {
-            var comp = ___curPawn?.TryGetEnneagramComp();
+            Pawn pawn = StartingPawnUtility.StartingAndOptionalPawns[pawnIndex];
+            var comp = pawn?.TryGetEnneagramComp();
             if (comp == null)
                 return;
 
@@ -24,7 +26,7 @@ namespace SPM1.Patches
             if (Widgets.ButtonText(rect6, "SP.EditPersonality".Translate(), true, true, true))
             {
                 SoundDefOf.Tick_Tiny.PlayOneShotOnCamera(null);
-                Find.WindowStack.Add(new Dialog_PersonalityEditor(){ Pawn = ___curPawn, ApplyOnClose = true });
+                Find.WindowStack.Add(new Dialog_PersonalityEditor(){ Pawn = pawn, ApplyOnClose = true });
             }
             TooltipHandler.TipRegion(rect6, new TipSignal(comp.GetDescription()));
             UIHighlighter.HighlightOpportunity(rect6, "SP.EditPersonality");
