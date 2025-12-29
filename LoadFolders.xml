@@ -20,4 +20,9 @@
     <li>1.5</li>
     <li IfModActive="edb.preparecarefully.alonske.fork">1.5_PrepareCarefully</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="edb.preparecarefully.alonske.fork">1.6_PrepareCarefully</li>
+  </v1.6>
 </loadFolders>

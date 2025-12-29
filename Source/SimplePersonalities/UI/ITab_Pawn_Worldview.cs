@@ -13,7 +13,7 @@ namespace SPM1.UI
             this.labelKey = "SP.TabLabel";
         }
 
-        protected override void FillTab()
+        public override void FillTab()
         {
             var rect = new Rect(10, 30, size.x - 20, size.y - 30);
             var pawn = base.SelPawn;
